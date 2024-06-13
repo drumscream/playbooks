@@ -1,0 +1,7 @@
+- name: Pings
+  hosts: rc
+  become: no
+  tasks:
+    - name: Ping Hosts
+    ping:
+    
