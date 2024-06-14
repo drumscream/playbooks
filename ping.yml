@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 - name: Pings
   hosts: rc
   become: no
   tasks:
     - name: Ping Hosts
       ping:
-    
-=======
-- hosts: all
-tasks:
-- ping
->>>>>>> 8a69e774335a62a38c61c541b12dbc2992dd7236
