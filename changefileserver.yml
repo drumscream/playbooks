@@ -1,0 +1,13 @@
+---
+- name: lineinfile module
+  hosts: test
+  tasks:
+  - name: Replacing a line
+    replace:
+#      path: /home/administrator/test
+      path: /etc/fstab
+#      search_string: '127.0.0.1'
+#      regexp: '^127\.0\.0\.1'
+      regexp: '10.105.136.3'
+      replace: '10.105.136.7'
+#      line: localhost
